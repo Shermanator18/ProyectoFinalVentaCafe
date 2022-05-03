@@ -1,0 +1,315 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+	height: 100%; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.menuVenta::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #B84D36;
+} 
+.li {
+    float: left;
+}
+.li a {
+    display: block;
+    color: #B84D36;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.li a:hover {
+    background-color: #B84D36;
+}
+.prodVenta {
+    float: left;
+    width: 30%;
+    padding: 15px;
+    max-width: 30%;
+    margin: auto;
+    text-align: center;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.foot{
+    color: #B84D36;
+}
+.form{
+        background-color: #B84D36;
+        left: 0%;
+}
+.ulform{
+        list-style-type: none;
+}
+.body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.input[type=submit] {
+    background-color: #B84D36;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input[type=submit]:hover {
+    background-color: #B84D36;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.derecha{
+    float: right;
+}
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	font-family: sans-serif;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+	width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slide img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.caption {
+	color: white;
+	text-shadow: 1px 1px #B84D36;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+}
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	background-color: #B84D36;
+	z-index: 100;
+}
+
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: #B84D36;
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}
+
+	.caption {
+		font-size: 96px;
+		bottom: 96px;
+		right: 50px;
+	}
+}
+.rows {
+    height: 100vh
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    min-height: calc(1.5em + .75rem + 2px);
+    padding: .575rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #B84D36;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 52px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.card {
+    padding: 20px;
+    background-color: #eee;
+    padding-bottom: 50px;
+    padding-top: 50px
+}
+
+.form-control:focus {
+    color: #B84D36;
+    background-color: #fff;
+    border-color: #B84D36;
+    outline: 0;
+    box-shadow: none
+}
+
+.border-rad {
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    color: #fff;
+    background-color: #B84D36;
+    border-color: #B84D36
+}
+
+.border-rad:hover {
+    background-color: #B84D36;
+    border-color: #B84D36
+}
+.index{
+    background-image: url("../assets/img/Coffee-beans-white-cup_3840x2160.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 600px;
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+} 
+h1,h2,h3,h4,h5,h6,p{
+    font-family: sans-serif;
+}
+
+.btn btn-primary{
+        border: none;
+        text-align: center;
+        padding: 30px 150px;
+        overflow: hidden; /* for clearfix */
+        display: flex;
+}
+.imgindex{
+    max-width: 100%
+}
+.h1index{
+    margin: 0px;
+    padding: 0%;
+    height: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+.row{
+    margin-top: 60px;
+}
